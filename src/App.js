@@ -12,7 +12,7 @@ import cors from "cors"
 dotenv.config()
 export const app = express()
 const corsOptions ={
-    origin: ["http://localhost:5173"],
+    origin: [process.env.Origin_host,],
     method:[ "GET", "HEAD", "OPTIONS", "POST", " DELETE", " PATCH"],
     credentials: true,
     optionSuccessStatus: 200
